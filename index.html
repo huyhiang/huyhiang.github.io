@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trình phát nhạc</title>
+    <title>Trình phát nhạc YouTube</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -33,9 +33,10 @@
             font-size: 24px;
             margin: 15px 0 10px;
         }
-        audio {
+        iframe {
             width: 100%;
-            margin-top: 10px;
+            border: none;
+            border-radius: 10px;
         }
     </style>
 </head>
@@ -43,10 +44,11 @@
     <div class="music-player">
         <img src="https://i.postimg.cc/hGD5DxnH/IMG-1197.png" alt="Ảnh bài hát">
         <h2>Tên bài hát</h2>
-        <audio controls>
-            <source src="https://www.example.com/song.mp3" type="audio/mpeg">
-            Trình duyệt của bạn không hỗ trợ trình phát nhạc.
-        </audio>
+        <iframe 
+            src="https://www.youtube.com/embed/J4uQuOSqEJQ?autoplay=0&rel=0" 
+            allow="autoplay" 
+            allowfullscreen>
+        </iframe>
     </div>
 </body>
 </html>
